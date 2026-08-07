@@ -1,59 +1,73 @@
 Name,Location,Season,Time,Price,Shadow Size,Donated
-Bitterling,River,Winter,All Day,900,Small,No
-Pale Chub,River,All Year,9 AM - 4 PM,200,Small,No
-Crucian Carp,River,All Year,All Day,160,Small,No
-Dace,River,All Year,9 PM - 4 AM,240,Small,No
-Carp,Pond,All Year,All Day,300,Large,No
-Koi,Pond,All Year,4 PM - 9 AM,4000,Large,No
-Goldfish,Pond,All Year,All Day,1300,Small,No
-Pop-eyed Goldfish,Pond,All Year,All Day,1300,Small,No
-Ranchu Goldfish,Pond,All Year,All Day,4500,Small,No
-Killifish,River,Summer,9 AM - 4 PM,300,Tiny,No
-Crawfish,Pond,Summer,All Day,200,Tiny,No
-Soft-Shelled Turtle,River,Summer,4 PM - 9 AM,3750,Large,No
-Snapping Turtle,River,"Spring, Summer, Fall",9 PM - 4 AM,5000,Large,No
-Tadpole,Pond,Spring,All Day,100,Tiny,No
-Frog,Pond,Summer,All Day,120,Small,No
-Freshwater Goby,River,Winter,4 PM - 9 AM,400,Small,No
-Loach,River,Spring,All Day,300,Small,No
-Catfish,Pond,"Summer, Fall",4 PM - 9 AM,800,Large,No
-Giant Snakehead,Pond,Summer,4 PM - 9 AM,5500,Large,No
-Bluegill,River,All Year,All Day,120,Small,No
-Yellow Perch,River,"Fall, Winter",All Day,240,Small,No
-Black Bass,River,All Year,All Day,300,Medium,No
-Sweetfish,River Mouth,Summer,All Day,900,Small,No
-Cherry Salmon,River (Clifftop),"Spring, Fall",All Day,1000,Medium,No
-Char,River (Clifftop),"Spring, Fall",All Day,3800,Medium,No
-Rainbow Trout,River (Clifftop),"Spring, Fall",All Day,800,Medium,No
-Stringfish,River (Clifftop),Winter,4 PM - 9 AM,15000,Large,No
-Salmon,River Mouth,Fall,All Day,700,Large,No
-King Salmon,River Mouth,Fall,All Day,1000,X-Large,No
-Guppy,River,"Spring, Fall",9 AM - 4 PM,1300,Tiny,No
-Nibble Fish,River,Summer,9 AM - 4 PM,900,Tiny,No
-Angelfish,River,"Summer, Fall",4 PM - 9 AM,3000,Small,No
-Betta,River,Summer,9 AM - 4 PM,2500,Small,No
-Neon Tetra,River,"Spring, Fall",9 AM - 4 PM,500,Tiny,No
-Piranha,River,Summer,9 AM - 4 PM,2500,Medium,No
-Sea Bass,Sea,All Year,All Day,400,Medium,No
-Red Snapper,Sea,All Year,All Day,3000,Medium,No
-Olive Flounder,Sea,All Year,All Day,800,Medium,No
-Squid,Sea,"Winter, Spring",All Day,500,Small,No
-Moray Eel,Sea,Summer,9 PM - 4 AM,2000,Large,No
-Ray,Sea,Summer,4 PM - 9 AM,3000,X-Large,No
-Zebra Turkeyfish,Sea,"Spring, Fall",All Day,300,Small,No
-Blowfish,Sea,Winter,All Day,5000,Medium,No
-Anchovy,Sea,All Year,4 AM - 9 PM,200,Small,No
-Horse Mackerel,Sea,All Year,All Day,150,Small,No
-Barred Knifejaw,Sea,Summer,All Day,5000,Medium,No
-Dab,Sea,Winter,All Day,300,Small,No
-Football Fish,Sea,Winter,4 PM - 9 AM,2500,Medium,No
-Oarfish,Sea,"Winter, Spring",All Day,9000,X-Large,No
-Barreleye,Sea,All Year,9 PM - 4 AM,15000,Medium,No
-Coelacanth,Sea (Rain Only),All Year,All Day,15000,X-Large,No
-Saw Shark,Sea,Summer,All Day,12000,X-Large,No
-Hammerhead Shark,Sea,Summer,All Day,8000,X-Large,No
-Great White Shark,Sea,Summer,4 PM - 9 AM,15000,X-Large,No
-Whale Shark,Sea,Summer,All Day,13000,X-Large,No
-Suckerfish,Sea,Summer,All Day,1500,Medium,No
-Tuna,Pier,Winter,All Day,7000,X-Large,No
-Blue Marlin,Pier,Summer,All Day,10000,X-Large,No
+Bitterling,River,JanFeb & NovDec,All Day,900,Tiny,No
+Pale chub,River,All Year,9 AM - 4 PM,200,Tiny,No
+Crucian carp,River,All Year,All Day,120,Small,No
+Dace,River,All Year,4 PM - 9 AM,200,Medium,No
+Barbel steed,River,All Year,All Day,200,Medium,No
+Carp,River,All Year,All Day,300,Large,No
+Koi,River,All Year,4 PM - 9 AM,4000,Large,No
+Goldfish,River,All Year,All Day,1300,Tiny,No
+Pop-eyed goldfish,River,All Year,9 AM - 4 PM,1300,Tiny,No
+Killifish,Pond,Apr-Aug,All Day,300,Tiny,No
+Crawfish,Pond,Apr-Sep*,All Day,200,Small,No
+Soft-shelled turtle,River,AugSep,4 PM - 9 AM,3750,Medium,No
+Tadpole,Pond,Mar-July,All Day,100,Tiny,No
+Frog,Pond,May-Aug,All Day,120,Small,No
+Freshwater goby,River,All Year,4 PM - 9 AM,300,Small,No
+Loach,River,Mar-May,All Day,300,Small,No
+Catfish,River Pool,May-Oct,4 PM - 9 AM,800,Large,No
+Eel,River,Jun-Sep*,4 PM - 9 AM,2000,Narrow,No
+Giant snakehead,River Pool,Jun-Aug,9 AM - 4 PM,5500,X-Large,No
+Bluegill,River,All Year,9 AM - 4 PM,120,Small,No
+Yellow perch,River,Jan-Mar & Oct-Dec,All Day,240,Medium,No
+Black bass,River,All Year,All Day,300,Large,No
+Pike,River,Sep-Dec,4 AM - 9 PM,1800,X-Large,No
+Pond smelt,River,JanFebDec,All Day,300,Small,No 
+Sweetfish,River,July-Sep,All Day,900,Medium,No
+Cherry salmon,River,Mar-Jun & Sep-Nov,4 AM - 9 PM (M-J) & 4 PM - 9 PM (S-N),1000,Medium,No
+Char,Waterfall,Mar-Jun & Sep-Nov,4 AM - 9 AM (M-J) & 4 PM - 9 PM (S-N),3800,Medium,No
+Rainbow Trout,River,Mar-Jun & Sep-Nov,4 AM - 9 AM (M-J) & 4 PM - 9 PM (S-N),800,Large,No
+Stringfish,River,JanFebDec,4 PM - 9 AM,15000,Huge,No
+Salmon,River Mouth,Sep,All Day,700,Large,No
+King Salmon,River Mouth,Sep*,All Day,1800,Huge,No
+Mitten crab,River,*SepOctNov,4 PM - 9 AM,2000,Small,No
+Guppy,River,Apr-Nov,9 AM - 4 PM,1300,Tiny,No
+Nibble Fish,River,May-Sep,9 AM - 4 PM,1500,Small,No
+Angelfish,River,May-Oct,4 PM - 9 AM,3000,Small,No
+Neon Tetra,River,Apr-Nov,9 AM - 4 PM,500,Tiny,No
+Piranha,River,Jun-Sep*,9 AM - 4 PM & 9 PM - 4 AM,2500,Small,No
+Arowana,River,Jun-Sep*,4 PM - 9 AM,10000,Large,No
+Dorado,River,Jun-Sep,4 AM - 9 PM,15000,X-Large,No
+Gar,River Pool,Jun-Sep,4 PM - 9 AM,6000,Huge,No
+Arapaima,River,Jul-Sep,4 PM - 9 AM,10000,Huge,No
+Saddled bichir,River,Jun-Sep,9 PM - 4 AM,4000,Large,No
+Sea butterfly,Sea,JanFebDec,All Day,1000,Tiny,No
+Sea horse,Sea & Island,Apr-Nov,All Day,1100,Tiny,No
+Clown fish,Sea & Island,Apr-Sep,All Day,650,Tiny,No
+Surgeonfish,Sea & Island,Apr-Sep,All Day,1000,Small,No
+Butterfly fish,Sea & Island,Apr-Sep,All Day,1000,Small,No
+Napoleonfish,Sea & Island,JulAug,4 AM - 9 PM,10000,Huge,No
+Zebra turkeyfish,Sea & Island,Apr-Nov,All Day,400,Medium,No
+Blowfish,Sea,JanFeb & NovDec,9PM - 4 AM,5000,Medium,No
+Puffer fish,Sea & Island,Jul-Sep,All Day,240,Medium,No
+Horse mackerel,Sea & Island,All Year,All Day,150,Small,No 
+Barred knifejaw,Sea & Island,Mar-Nov,All Day,5000,Medium,No
+Sea bass,Sea & Island,All Year,All Day,2000,X-Large,No
+Red snapper,Sea & Island,All Year,All Day,3000,Medium,No
+Dab,Sea,Jan-Apr & Oct-Dec,All Day,300,Medium,No
+Olive flounder,Sea & Island,All Year,All Day,800,Large,No
+Squid,Sea & Island,Jan-Aug* & Dec,All Day,400,Medium,No
+Moray eel,Sea & Island,Aug-Oct,All Day,2000,X-Large,No
+Ribbon eel,Island,All Year,All Day,600,Narrow,No
+Football fish,Sea,Jan-Mar & NovDec,4 PM - 9 AM,2500,Large,No
+Tuna,Sea,Jan-Mar & NovDec,All Day,7000,Huge,No
+Blue marlin,Sea & Island,Jul-Sep,All Day,10000,Huge,No
+Giant Trevally,Island,All Year,All Day,4500,X-Large,No
+Ray,Sea & Island,Aug-Nov,4 AM - 9 PM,3000,X-Large,No
+Ocean sunfish,Sea & Island,Jun-Sep,4 AM - 9 PM,4000,Huge(finned),No
+Hammerhead shark,Sea & Island,Jun-Sep,4 PM - 9 AM,8000,Huge(finned),No
+Shark,Sea & Island,Jun-Sep,4 PM - 9 AM,15000,Huge(finned),No
+Saw shark,Sea & Island,Jun-Sep,4 PM - 9 AM,12000,Huge(finned),No
+Whale Shark,Island,All Year,All Day,13000,Huge(finned),No
+Oarfish,Sea,Jan-May & Dec,All Day,9000,Huge,No
+Coelacanth,Sea(rain & snow),All Year,4 PM - 9 AM,15000,Huge,No
