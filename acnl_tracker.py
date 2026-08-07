@@ -1,12 +1,15 @@
-import csv
 import os
 import tkinter as tk
 from tkinter import ttk
 
+import mayor
 import museum
+import villagers
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+
+# -- Page Template --
 class Page(ttk.Frame):
     """Base class for a tracker page: adds a consistent header label."""
 
@@ -24,14 +27,26 @@ class Page(ttk.Frame):
         """Override in subclasses to add page-specific widgets, starting at row 1."""
         pass
 
-
-class MayorPage(Page):
-    title = "Mayor"
+# -- Mayor Page -- 
+class MayorProfilePage(Page):
+    title = "Mayor Ava"
 
     def build_content(self):
-        ttk.Label(self, text="(Mayor content goes here)").grid(row=1, column=0, sticky="w")
+        ttk.Button(self, text="Hair Colour Codes", command=self.open_hair_colour_window).grid(
+            row=1, column=0, sticky="w"
+        )
+        ttk.Button(self, text="Hairstyle Codes", command=self.open_hairstyle_window).grid(
+            row=2, column=0, sticky="w"
+        )
+        mayor.HomeLoanSection(self).grid(row=3, column=0, sticky="w", pady=(20, 0))
 
+    def open_hair_colour_window(self):
+        mayor.ImageWindow(self, "Hair Colour Codes", mayor.HAIR_COLOUR_IMAGE_PATH)
 
+    def open_hairstyle_window(self):
+        mayor.ImageWindow(self, "Hairstyle Codes", mayor.HAIRSTYLE_IMAGE_PATH)
+
+# -- Town Page --
 class TownPage(Page):
     title = "Town"
 
@@ -41,7 +56,31 @@ class TownPage(Page):
         )
         ttk.Label(self, text="(Town content goes here)").grid(row=2, column=0, sticky="w")
 
+# -- Villager Page --
+class VillagerPage(Page):
+    title = "Villagers"
 
+    def build_content(self):
+        ttk.Button(self, text="Current Villagers", command=self.open_current_villagers_window).grid(
+            row=1, column=0, sticky="w"
+        )
+        ttk.Button(self, text="Dreamies", command=self.open_dreamies_window).grid(
+            row=2, column=0, sticky="w"
+        )
+        ttk.Button(self, text="All Villagers", command=self.open_all_villagers_window).grid(
+            row=3, column=0, sticky="w"
+        )
+
+    def open_current_villagers_window(self):
+        villagers.CurrentVillagersWindow(self)
+
+    def open_dreamies_window(self):
+        villagers.DreamiesWindow(self)
+
+    def open_all_villagers_window(self):
+        villagers.AllVillagersWindow(self)
+
+# -- Museum Page --
 class MuseumPage(Page):
     title = "Museum"
 
@@ -60,33 +99,33 @@ class MuseumPage(Page):
         museum.BugWindow(self)
 
 
-
-
+# -- Catalogue Page --
 class CataloguePage(Page):
     title = "Catalogue"
 
     def build_content(self):
         ttk.Label(self, text="(Catalogue content goes here)").grid(row=1, column=0, sticky="w")
 
-
+# -- Wishlists Page --
 class WishlistsPage(Page):
     title = "Wishlists"
 
     def build_content(self):
         ttk.Label(self, text="(Wishlists content goes here)").grid(row=1, column=0, sticky="w")
 
-
+# -- Game Notes Page --
 class GameNotesPage(Page):
     title = "Game Notes"
 
     def build_content(self):
         ttk.Label(self, text="(Game Notes content goes here)").grid(row=1, column=0, sticky="w")
 
-
+# -- Main Application Window --
 class App(tk.Tk):
     PAGE_CLASSES = [
-        MayorPage,
+        MayorProfilePage,
         TownPage,
+        VillagerPage,
         MuseumPage,
         CataloguePage,
         WishlistsPage,
@@ -112,7 +151,7 @@ class App(tk.Tk):
         self._build_content_area()
         self._build_pages()
 
-        self.show_page("Mayor")
+        self.show_page("Mayor Ava")
 
     # ---------- Sidebar ----------
     def _build_sidebar(self):

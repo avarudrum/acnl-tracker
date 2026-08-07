@@ -16,6 +16,7 @@ class ImageWindow(tk.Toplevel):
 
     def __init__(self, parent, title, image_path):
         super().__init__(parent)
+        self.protocol("WM_DELETE_WINDOW", self.destroy)
         self.title(title)
 
         # Kept as an attribute so Tkinter doesn't garbage-collect it and blank the label
@@ -78,6 +79,7 @@ class HomeLoanDialog(tk.Toplevel):
 
     def __init__(self, parent, section):
         super().__init__(parent)
+        self.protocol("WM_DELETE_WINDOW", self.destroy)
         self.title("Set Home Loan Total")
         self.section = section
 

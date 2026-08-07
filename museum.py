@@ -1,7 +1,8 @@
-import csv
 import os
 import tkinter as tk
 from tkinter import ttk
+
+from csv_utils import load_csv_data, save_csv_rows
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -12,20 +13,8 @@ BUG_COLUMNS = ["Name", "Location", "Season", "Time", "Price", "Donated"]
 FISH_COLUMNS = ["Name", "Location", "Season", "Time", "Price", "Shadow Size", "Donated"]
 SHADOW_SIZES = ["Tiny", "Small", "Medium", "Large", "X-Large"]
 
-DONATED_SYMBOLS = {"Yes": "✓", "No": "✗"} 
+DONATED_SYMBOLS = {"Yes": "✓", "No": "✗"}
 
-# Loads the CSV data into a list of dictionaries
-# Used to access and edit the each museum category's data
-def load_csv_data(path):
-    with open(path, newline="", encoding="utf-8") as csv_file:
-        return list(csv.DictReader(csv_file))
-
-# Saves the donation status back to the CSV file
-def save_donation_status(rows, path):
-    with open(path, "w", newline="", encoding="utf-8") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=rows[0].keys())
-        writer.writeheader()
-        writer.writerows(rows)
 
 class FilterSpec:
     """One filter dropdown: keeps only rows whose `column` matches the selected option.
@@ -61,6 +50,7 @@ class CategoryWindow(tk.Toplevel):
 
     def __init__(self, parent):
         super().__init__(parent)
+        self.protocol("WM_DELETE_WINDOW", self.destroy)
         self.title(self.category_name)
         self.geometry("1500x800")
 
@@ -178,7 +168,7 @@ class CategoryWindow(tk.Toplevel):
         # If the user double clicks the Donated cell, toggle Yes/No and save back to the CSV
         row = next(r for r in self.rows if r["Name"] == row_id)
         row["Donated"] = "No" if row["Donated"] == "Yes" else "Yes"
-        save_donation_status(self.rows, self.csv_path)
+        save_csv_rows(self.rows, self.columns, self.csv_path)
         self._apply_filters()
 
 
